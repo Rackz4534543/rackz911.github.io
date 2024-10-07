@@ -3,79 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Barber Nazal - Professional Barber Services">
     <title>Barber Nazal</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="nav-left">
-                <a href="#" class="brand">Barber Nazal</a>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#reviews">Ratings & Reviews</a></li>
-                    <li><a href="#hours">Hours</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="auth-buttons">
-                <button class="signin-btn">Sign In</button>
-                <button class="book-btn">Book Now</button>
-            </div>
-        </nav>
-    </header>
 
-    <section id="hero">
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="burger-menu" onclick="toggleMenu()">
+            &#9776; Menu
+        </div>
+        <div id="navLinks" class="nav-links">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#reviews">Ratings & Reviews</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="auth-buttons">
+            <a href="https://www.instagram.com/Barbernazal" class="btn">Sign In</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
         <div class="hero-content">
             <h1>Barber Nazal</h1>
-            <div class="hero-buttons">
-                <button class="book-btn">Book Now</button>
-                <button class="signin-btn">Sign In</button>
-            </div>
+            <a href="https://www.instagram.com/Barbernazal" class="btn hero-btn">Book Now</a>
         </div>
     </section>
 
-    <section id="about">
+    <!-- About Section -->
+    <section id="about" class="fade-section">
         <h2>About</h2>
-        <p>Welcome to Barber Nazal! Here is a brief about us.</p>
+        <p>Welcome! My name is Rami, a professional barber with over 6 years of experience. My passion is to provide each client with a personalized touch to their grooming experience.</p>
     </section>
 
-    <section id="services">
+    <!-- Services Section -->
+    <section id="services" class="fade-section">
         <h2>Services</h2>
-        <p>Our list of services is extensive and tailored for you!</p>
+        <ul>
+            <li>Haircut</li>
+            <li>Shave</li>
+            <li>Beard Trim</li>
+        </ul>
     </section>
 
-    <section id="reviews">
+    <!-- Ratings & Reviews Section -->
+    <section id="reviews" class="fade-section">
         <h2>Ratings & Reviews</h2>
-        <p>Check out what our customers have to say.</p>
+        <p>⭐⭐⭐⭐⭐ 17 reviews</p>
+        <p>Jonathan Persson</p>
     </section>
 
-    <section id="hours">
+    <!-- Contact Section -->
+    <section id="contact" class="fade-section">
+        <h2>Contact</h2>
+        <p>Address: Hallarödsvägen 15, Kristianstad, Sweden</p>
+
+        <!-- Google Maps Embed -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.7432657369475!2d14.077211715824587!3d56.029395780643396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653ba19ffcd598d%3A0xb408d407eb8a62c7!2sHallar%C3%B6dsv%C3%A4gen%2015%2C%20291%2068%20Kristianstad%2C%20Sweden!5e0!3m2!1sen!2sus!4v1696698776672!5m2!1sen!2sus" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Hours Section -->
+    <section id="hours" class="fade-section">
         <h2>Hours</h2>
-        <ul class="hours-list">
-            <li>Monday: 9:00 AM – 6:00 PM</li>
-            <li>Tuesday: 9:00 AM – 6:00 PM</li>
-            <li>Wednesday: 9:00 AM – 6:00 PM</li>
-            <li>Thursday: 9:00 AM – 6:00 PM</li>
-            <li>Friday: 9:00 AM – 6:00 PM</li>
-            <li>Saturday: 10:00 AM – 4:00 PM</li>
+        <ul>
+            <li>Monday - Friday: 10 AM - 6 PM</li>
+            <li>Saturday: 10 AM - 4 PM</li>
             <li>Sunday: Closed</li>
         </ul>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Find us on Instagram: <a href="https://www.instagram.com/Barbernazal" target="_blank">Instagram Barber Nazal</a></p>
-        <div class="address">
-            <h3>Our Location</h3>
-            <p>Hallarödsvägen 15, Kristianstad, Sweden</p>
-            <iframe src="https://www.google.com/maps/embed/v1/place?q=Hallar%C3%B6dsv%C3%A4gen+15,+Kristianstad,+Sweden&key=YOUR_API_KEY" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Barber Nazal. All rights reserved.</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
